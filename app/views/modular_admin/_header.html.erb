@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="header-block header-block-buttons">
+    Blogger
+  </div>
+  <% flash.each do |kind, message| %>
+    <% flash_map = { 'notice' => 'info', 'alert' => 'warning', 'error' => 'danger' } %>
+    <div class="alert alert-<%= flash_map[kind] %> alert-dismissible fade show" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <%= message %>
+    </div>
+  <% end %>
+</header>

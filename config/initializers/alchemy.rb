@@ -1,0 +1,6 @@
+Alchemy.user_class_name     = 'User'       # Defaults to 'User'
+Alchemy.current_user_method = 'current_user'  # Defaults to 'current_user'
+Alchemy.signup_path         = '/admin/login'   # Defaults to '/signup'
+Alchemy.login_path          = '/admin/login'    # Defaults to '/login'
+Alchemy.logout_path         = '/admin/logout'   # Defaults to '/logout'
+Alchemy.admin_path          = '/cms'
